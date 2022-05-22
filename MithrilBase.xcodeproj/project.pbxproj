@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
 		35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB02839F585001D627F /* MithrilBaseApp.swift */; };
-		35D9BBB32839F585001D627F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB22839F585001D627F /* ContentView.swift */; };
+		35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB22839F585001D627F /* WeatherPage.swift */; };
 		35D9BBB52839F586001D627F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D9BBB42839F586001D627F /* Assets.xcassets */; };
 		35D9BBB82839F586001D627F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D9BBB72839F586001D627F /* Preview Assets.xcassets */; };
 		35D9BBC22839F586001D627F /* MithrilBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBC12839F586001D627F /* MithrilBaseTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
 		35D9BBAD2839F585001D627F /* MithrilBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MithrilBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9BBB02839F585001D627F /* MithrilBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MithrilBaseApp.swift; sourceTree = "<group>"; };
-		35D9BBB22839F585001D627F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35D9BBB22839F585001D627F /* WeatherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPage.swift; sourceTree = "<group>"; };
 		35D9BBB42839F586001D627F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D9BBB72839F586001D627F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35D9BBBD2839F586001D627F /* MithrilBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MithrilBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3534DD4E283AF9500045DC34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35D9BBB22839F585001D627F /* WeatherPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3534DD4F283AF9BB0045DC34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		35D9BBA42839F585001D627F = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +112,9 @@
 		35D9BBAF2839F585001D627F /* MithrilBase */ = {
 			isa = PBXGroup;
 			children = (
+				3534DD4F283AF9BB0045DC34 /* ViewModel */,
+				3534DD4E283AF9500045DC34 /* Views */,
 				35D9BBB02839F585001D627F /* MithrilBaseApp.swift */,
-				35D9BBB22839F585001D627F /* ContentView.swift */,
 				35D9BBB42839F586001D627F /* Assets.xcassets */,
 				35D9BBB62839F586001D627F /* Preview Content */,
 			);
@@ -257,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D9BBB32839F585001D627F /* ContentView.swift in Sources */,
+				35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */,
 				35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */,
+				3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
