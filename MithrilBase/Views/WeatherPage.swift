@@ -26,6 +26,10 @@ struct WeatherPage: View {
                     
                     Button (action: {
                         // action
+                        
+                        let request = WeatherRequest()
+                        request.getWeather(city: "Manila")
+                        
                     }) {
                         Image(systemName: "cloud.fill")
                             .font(.system(size:30))

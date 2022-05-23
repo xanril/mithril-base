@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
+		3534DD54283AFE160045DC34 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3534DD53283AFE160045DC34 /* Alamofire */; };
+		3534DD56283B01550045DC34 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD55283B01550045DC34 /* Configurations.swift */; };
+		3534DD5A283B03700045DC34 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD59283B03700045DC34 /* WeatherRequest.swift */; };
+		3534DD5D283B08F30045DC34 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD5C283B08F30045DC34 /* WeatherResponse.swift */; };
 		35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB02839F585001D627F /* MithrilBaseApp.swift */; };
 		35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB22839F585001D627F /* WeatherPage.swift */; };
 		35D9BBB52839F586001D627F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D9BBB42839F586001D627F /* Assets.xcassets */; };
@@ -36,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
+		3534DD55283B01550045DC34 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		3534DD59283B03700045DC34 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
+		3534DD5C283B08F30045DC34 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		35D9BBAD2839F585001D627F /* MithrilBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MithrilBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9BBB02839F585001D627F /* MithrilBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MithrilBaseApp.swift; sourceTree = "<group>"; };
 		35D9BBB22839F585001D627F /* WeatherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPage.swift; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3534DD54283AFE160045DC34 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3534DD57283B03120045DC34 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				3534DD5B283B08D50045DC34 /* Responses */,
+				3534DD58283B032D0045DC34 /* Rest */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		3534DD58283B032D0045DC34 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				3534DD59283B03700045DC34 /* WeatherRequest.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		3534DD5B283B08D50045DC34 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3534DD5C283B08F30045DC34 /* WeatherResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		35D9BBA42839F585001D627F = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +145,13 @@
 		35D9BBAF2839F585001D627F /* MithrilBase */ = {
 			isa = PBXGroup;
 			children = (
+				3534DD57283B03120045DC34 /* DataServices */,
 				3534DD4F283AF9BB0045DC34 /* ViewModel */,
 				3534DD4E283AF9500045DC34 /* Views */,
 				35D9BBB02839F585001D627F /* MithrilBaseApp.swift */,
 				35D9BBB42839F586001D627F /* Assets.xcassets */,
 				35D9BBB62839F586001D627F /* Preview Content */,
+				3534DD55283B01550045DC34 /* Configurations.swift */,
 			);
 			path = MithrilBase;
 			sourceTree = "<group>";
@@ -162,6 +197,9 @@
 			dependencies = (
 			);
 			name = MithrilBase;
+			packageProductDependencies = (
+				3534DD53283AFE160045DC34 /* Alamofire */,
+			);
 			productName = MithrilBase;
 			productReference = 35D9BBAD2839F585001D627F /* MithrilBase.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 35D9BBA42839F585001D627F;
+			packageReferences = (
+				3534DD52283AFE160045DC34 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 35D9BBAE2839F585001D627F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,7 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */,
+				3534DD5D283B08F30045DC34 /* WeatherResponse.swift in Sources */,
 				35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */,
+				3534DD56283B01550045DC34 /* Configurations.swift in Sources */,
+				3534DD5A283B03700045DC34 /* WeatherRequest.swift in Sources */,
 				3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3534DD52283AFE160045DC34 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3534DD53283AFE160045DC34 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3534DD52283AFE160045DC34 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35D9BBA52839F585001D627F /* Project object */;
 }
