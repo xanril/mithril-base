@@ -11,6 +11,8 @@ struct WeatherPage: View {
     
     @State private var viewModel: WeatherPageViewModel = WeatherPageViewModel()
     
+    
+    
     var body: some View {
         ZStack {
             Image("background")
@@ -27,9 +29,6 @@ struct WeatherPage: View {
                     Button (action: {
                         // action
                         
-                        let request = WeatherRequest()
-                        request.getWeather(city: "Manila")
-                        
                     }) {
                         Image(systemName: "cloud.fill")
                             .font(.system(size:30))
@@ -40,7 +39,9 @@ struct WeatherPage: View {
                         .textFieldStyle(.roundedBorder)
                     
                     Button (action: {
-                        print(viewModel.searchText)
+                        
+                        viewModel.getWeather()
+                        
                     }) {
                         Image(systemName: "cloud.fill")
                             .font(.system(size:30))
@@ -50,15 +51,16 @@ struct WeatherPage: View {
                 }
                 .padding([.leading, .bottom, .trailing])
                 
-                VStack {
+                VStack (alignment:.trailing) {
                     
-                    Image(systemName: "cloud.fill")
-                        .font(.system(size: 80))
+                    Image(systemName: viewModel.iconName)
+                        .font(.system(size: 110))
+                        .symbolRenderingMode(.multicolor)
                     
                     Text("25")
                         .font(.system(size: 80))
                     
-                    Text("Manilaasdasd")
+                    Text(viewModel.location)
                         .padding(.trailing)
                 }
                 .padding(.trailing)
