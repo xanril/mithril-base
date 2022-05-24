@@ -11,8 +11,8 @@ class WeatherController {
     
     private let dataService: WeatherDataService = WeatherDataService()
     
-    public func getWeather(city: String) -> WeatherBusinessModel {
+    public func getWeather(city: String) async -> WeatherBusinessModel {
         
-        return dataService.getWeather(city: city)
+        return await dataService.getWeather(city: city)
     }
 }

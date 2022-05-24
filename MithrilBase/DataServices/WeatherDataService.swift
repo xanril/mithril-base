@@ -9,10 +9,10 @@ import Foundation
 
 class WeatherDataService {
     
-    public func getWeather(city: String) -> WeatherBusinessModel {
+    public func getWeather(city: String) async -> WeatherBusinessModel {
 
         let request = WeatherRequest()
-        let response = request.getWeather(city: city)
+        let response = await request.getWeather(city: city)
         
         let weather: WeatherBusinessModel = WeatherBusinessModel()
         

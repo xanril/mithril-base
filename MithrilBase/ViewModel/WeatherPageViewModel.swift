@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class WeatherPageViewModel : ObservableObject {
+@MainActor public class WeatherPageViewModel : ObservableObject {
     
     let weatherController:WeatherController = WeatherController()
     
@@ -17,13 +17,14 @@ public class WeatherPageViewModel : ObservableObject {
     @Published var temperature: String = ""
     
     init() {
-        location = "..."
+        location = "Initial Location"
         iconName = "cloud.sun.rain.fill"
+        temperature = "25 C°"
     }
     
-    public func getWeather() {
-        let weather = weatherController.getWeather(city: "Manila")
+    public func getWeather() async {
+        let weather = await weatherController.getWeather(city: "Manila")
         location = weather.location ?? ""
-        temperature = String(format: "%.1", weather.temperature ?? 0.0)
+        temperature = String(format: "%.1f C°", weather.temperature ?? 0.0)
     }
 }

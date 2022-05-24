@@ -10,24 +10,24 @@ import Alamofire
 
 class WeatherRequest {
     
-    func getWeather(city: String) -> WeatherResponse?  {
+    func getWeather(city: String) async -> WeatherResponse?  {
         
         var responseRecieved: WeatherResponse? = nil
         
-        // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-        AF.request("https://api.openweathermap.org/data/2.5/weather",
+        let dataTask = AF.request("https://api.openweathermap.org/data/2.5/weather",
                    method: .get,
                    parameters: ["q": city,
                                 "appid": Configurations.weathermapApiKey,
                                 "units": "metric"])
             .validate()
-            .responseDecodable(of: WeatherResponse.self) { response in
-
-                if let weatherResponse:WeatherResponse = response.value {
-                    debugPrint(weatherResponse)
-                    responseRecieved = weatherResponse
-                }
-            }
+            .serializingDecodable(WeatherResponse.self)
+        
+        do {
+            responseRecieved = try await dataTask.value
+        }
+        catch {
+            print("Error on network call: \(error)")
+        }
         
         return responseRecieved
     }

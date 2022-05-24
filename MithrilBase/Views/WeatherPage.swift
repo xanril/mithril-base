@@ -9,9 +9,7 @@ import SwiftUI
 
 struct WeatherPage: View {
     
-    @State private var viewModel: WeatherPageViewModel = WeatherPageViewModel()
-    
-    
+    @StateObject private var viewModel = WeatherPageViewModel()
     
     var body: some View {
         ZStack {
@@ -40,7 +38,9 @@ struct WeatherPage: View {
                     
                     Button (action: {
                         
-                        viewModel.getWeather()
+                        Task.init {
+                            await viewModel.getWeather()
+                        }
                         
                     }) {
                         Image(systemName: "cloud.fill")
@@ -57,10 +57,11 @@ struct WeatherPage: View {
                         .font(.system(size: 110))
                         .symbolRenderingMode(.multicolor)
                     
-                    Text("25")
+                    Text(viewModel.temperature)
                         .font(.system(size: 80))
                     
                     Text(viewModel.location)
+                        .font(.title2)
                         .padding(.trailing)
                 }
                 .padding(.trailing)
