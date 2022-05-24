@@ -26,5 +26,6 @@ import Foundation
         let weather = await weatherController.getWeather(city: "Manila")
         location = weather.location ?? ""
         temperature = String(format: "%.1f C°", weather.temperature ?? 0.0)
+        iconName = weather.iconName ?? "cloud.fill"
     }
 }

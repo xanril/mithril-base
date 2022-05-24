@@ -16,6 +16,7 @@ class WeatherDataService {
         
         let weather: WeatherBusinessModel = WeatherBusinessModel()
         
+        weather.statusId = response?.weather?.last?.id
         weather.status = response?.weather?.last?.main
         weather.description = response?.weather?.last?.weatherDescription
         weather.temperature = response?.main?.temp
