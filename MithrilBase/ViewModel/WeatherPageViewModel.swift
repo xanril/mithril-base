@@ -25,7 +25,7 @@ public class WeatherPageViewModel : ObservableObject{
     
     @MainActor
     public func getWeather() async {
-        let weather = await weatherController.getWeather(city: "Manila")
+        let weather = await weatherController.getWeather(city: "Manila", apiKey: Configurations.weathermapApiKey)
         location = weather.location ?? ""
         temperature = String(format: "%.1f C°", weather.temperature ?? 0.0)
         iconName = weather.iconName ?? "cloud.fill"

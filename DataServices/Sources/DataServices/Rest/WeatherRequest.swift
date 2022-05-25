@@ -10,14 +10,14 @@ import Alamofire
 
 struct WeatherRequest {
     
-    func getWeather(city: String) async -> WeatherResponse?  {
+    func getWeather(city: String, apiKey: String) async -> WeatherResponse?  {
         
         var responseRecieved: WeatherResponse? = nil
         
         let dataTask = AF.request("https://api.openweathermap.org/data/2.5/weather",
                    method: .get,
                    parameters: ["q": city,
-                                "appid": Configurations.weathermapApiKey,
+                                "appid": apiKey,
                                 "units": "metric"])
             .validate()
             .serializingDecodable(WeatherResponse.self)

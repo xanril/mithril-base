@@ -10,5 +10,5 @@ import BusinessModels
 
 public protocol WeatherDataServicing {
     
-    func getWeather(city: String) async -> WeatherBusinessModel
+    func getWeather(city: String, apiKey: String) async -> WeatherBusinessModel
 }

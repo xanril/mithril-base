@@ -4,28 +4,30 @@
 import PackageDescription
 
 let package = Package(
-    name: "DataServiceProtocols",
+    name: "DataServices",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "DataServiceProtocols",
-            targets: ["DataServiceProtocols"]),
+            name: "DataServices",
+            targets: ["DataServices"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(path: ",,/BusinessModels")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0"),
+        .package(path: "../BusinessModels"),
+        .package(path: "../DataServiceProtocols")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "DataServiceProtocols",
-            dependencies: ["BusinessModels"]),
+            name: "DataServices",
+            dependencies: ["Alamofire", "BusinessModels", "DataServiceProtocols"]),
         .testTarget(
-            name: "DataServiceProtocolsTests",
-            dependencies: ["DataServiceProtocols", "BusinessModels"]),
+            name: "DataServicesTests",
+            dependencies: ["DataServices", "Alamofire", "BusinessModels", "DataServiceProtocols"]),
     ]
 )

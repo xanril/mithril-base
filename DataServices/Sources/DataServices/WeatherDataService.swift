@@ -9,12 +9,16 @@ import Foundation
 import BusinessModels
 import DataServiceProtocols
 
-class WeatherDataService : WeatherDataServicing {
+public class WeatherDataService : WeatherDataServicing {
     
-    public func getWeather(city: String) async -> WeatherBusinessModel {
+    public init() {
+        
+    }
+    
+    public func getWeather(city: String, apiKey: String) async -> WeatherBusinessModel {
 
         let request = WeatherRequest()
-        let response = await request.getWeather(city: city)
+        let response = await request.getWeather(city: city, apiKey: apiKey)
         
         var weather: WeatherBusinessModel = WeatherBusinessModel()
         

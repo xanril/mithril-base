@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DataServices">
+   </FileRef>
+   <FileRef
       location = "group:DataServiceProtocols">
    </FileRef>
    <FileRef

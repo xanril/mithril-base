@@ -8,14 +8,15 @@
 import Foundation
 import BusinessModels
 import DataServiceProtocols
+import DataServices
 import Resolver
 
 class WeatherController : WeatherControlling {
     
     @Injected private var dataService: WeatherDataServicing
     
-    public func getWeather(city: String) async -> WeatherBusinessModel {
+    public func getWeather(city: String, apiKey: String) async -> WeatherBusinessModel {
         
-        return await dataService.getWeather(city: city)
+        return await dataService.getWeather(city: city, apiKey: apiKey)
     }
 }
