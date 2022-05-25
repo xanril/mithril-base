@@ -28,7 +28,7 @@ struct WeatherPage: View {
                         // action
                         
                     }) {
-                        Image(systemName: viewModel.iconName)
+                        Image(systemName: "location.fill")
                             .font(.system(size:30))
                             .tint(Color(uiColor: .black))
                     }
@@ -43,7 +43,7 @@ struct WeatherPage: View {
                         }
                         
                     }) {
-                        Image(systemName: "cloud.fill")
+                        Image(systemName: "magnifyingglass")
                             .font(.system(size:30))
                             .tint(Color(uiColor: .black))
                     }

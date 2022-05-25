@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import Resolver
 
-class WeatherController {
+class WeatherController : WeatherControlling {
     
-    private let dataService: WeatherDataService = WeatherDataService()
+    @Injected private var dataService: WeatherDataServicing
     
     public func getWeather(city: String) async -> WeatherBusinessModel {
         

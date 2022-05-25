@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WeatherDataService {
+class WeatherDataService : WeatherDataServicing {
     
     public func getWeather(city: String) async -> WeatherBusinessModel {
 

@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import Resolver
 
-@MainActor public class WeatherPageViewModel : ObservableObject {
+public class WeatherPageViewModel : ObservableObject{
     
-    let weatherController:WeatherController = WeatherController()
+    @Injected private var weatherController:WeatherControlling
     
     @Published var searchText: String = ""
     @Published var location: String = ""
@@ -22,6 +23,7 @@ import Foundation
         temperature = "25 C°"
     }
     
+    @MainActor
     public func getWeather() async {
         let weather = await weatherController.getWeather(city: "Manila")
         location = weather.location ?? ""
