@@ -8,7 +8,7 @@
 import Foundation
 import BusinessModels
 
-protocol WeatherDataServicing {
+public protocol WeatherDataServicing {
     
     func getWeather(city: String) async -> WeatherBusinessModel
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 import BusinessModels
+import DataServiceProtocols
 
 class WeatherDataService : WeatherDataServicing {
     

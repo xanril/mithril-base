@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DataServiceProtocols
 import Resolver
 
 extension Resolver: ResolverRegistering {
