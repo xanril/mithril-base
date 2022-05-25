@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ControllerProtocols
 import Resolver
 
 public class WeatherPageViewModel : ObservableObject{

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ControllerProtocols
 import DataServiceProtocols
 import DataServices
 import Resolver

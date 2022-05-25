@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		35028467283B9F9F0088981D /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35028466283B9F9F0088981D /* WeatherController.swift */; };
 		35117772283EE93E00645C5A /* DataServices in Frameworks */ = {isa = PBXBuildFile; productRef = 35117771283EE93E00645C5A /* DataServices */; };
+		35117774283EF2ED00645C5A /* ControllerProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 35117773283EF2ED00645C5A /* ControllerProtocols */; };
 		3520FD56283DA21900BF2466 /* MithrilBaseApp+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */; };
-		3520FD59283DA27F00BF2466 /* WeatherControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520FD58283DA27F00BF2466 /* WeatherControlling.swift */; };
 		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
 		3534DD56283B01550045DC34 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD55283B01550045DC34 /* Configurations.swift */; };
 		3579F0B3283E50520006A339 /* BusinessModels in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0B2283E50520006A339 /* BusinessModels */; };
@@ -46,7 +46,6 @@
 /* Begin PBXFileReference section */
 		35028466283B9F9F0088981D /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MithrilBaseApp+Injection.swift"; sourceTree = "<group>"; };
-		3520FD58283DA27F00BF2466 /* WeatherControlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControlling.swift; sourceTree = "<group>"; };
 		3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
 		3534DD55283B01550045DC34 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		35D9BBAD2839F585001D627F /* MithrilBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MithrilBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +67,7 @@
 			files = (
 				3579F0CD283E5DC10006A339 /* DataServiceProtocols in Frameworks */,
 				3579F0C9283E5CB30006A339 /* Alamofire in Frameworks */,
+				35117774283EF2ED00645C5A /* ControllerProtocols in Frameworks */,
 				3579F0B3283E50520006A339 /* BusinessModels in Frameworks */,
 				35117772283EE93E00645C5A /* DataServices in Frameworks */,
 				3579F0C6283E5C820006A339 /* Resolver-Static in Frameworks */,
@@ -103,7 +103,6 @@
 		3520FD57283DA26000BF2466 /* ControllerProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				3520FD58283DA27F00BF2466 /* WeatherControlling.swift */,
 			);
 			path = ControllerProtocols;
 			sourceTree = "<group>";
@@ -122,13 +121,6 @@
 				3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		3534DD57283B03120045DC34 /* DataServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataServices;
 			sourceTree = "<group>";
 		};
 		3579F0B1283E50520006A339 /* Frameworks */ = {
@@ -163,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				35028465283B9F8D0088981D /* Controllers */,
-				3534DD57283B03120045DC34 /* DataServices */,
 				3534DD4F283AF9BB0045DC34 /* ViewModel */,
 				3534DD4E283AF9500045DC34 /* Views */,
 				35D9BBB02839F585001D627F /* MithrilBaseApp.swift */,
@@ -222,6 +213,7 @@
 				3579F0C8283E5CB30006A339 /* Alamofire */,
 				3579F0CC283E5DC10006A339 /* DataServiceProtocols */,
 				35117771283EE93E00645C5A /* DataServices */,
+				35117773283EF2ED00645C5A /* ControllerProtocols */,
 			);
 			productName = MithrilBase;
 			productReference = 35D9BBAD2839F585001D627F /* MithrilBase.app */;
@@ -342,7 +334,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */,
-				3520FD59283DA27F00BF2466 /* WeatherControlling.swift in Sources */,
 				3520FD56283DA21900BF2466 /* MithrilBaseApp+Injection.swift in Sources */,
 				35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */,
 				3534DD56283B01550045DC34 /* Configurations.swift in Sources */,
@@ -694,6 +685,10 @@
 		35117771283EE93E00645C5A /* DataServices */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataServices;
+		};
+		35117773283EF2ED00645C5A /* ControllerProtocols */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ControllerProtocols;
 		};
 		3579F0B2283E50520006A339 /* BusinessModels */ = {
 			isa = XCSwiftPackageProductDependency;

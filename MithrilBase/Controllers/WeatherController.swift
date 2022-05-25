@@ -7,6 +7,7 @@
 
 import Foundation
 import BusinessModels
+import ControllerProtocols
 import DataServiceProtocols
 import DataServices
 import Resolver
