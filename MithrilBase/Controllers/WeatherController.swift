@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BusinessModels
 import Resolver
 
 class WeatherController : WeatherControlling {

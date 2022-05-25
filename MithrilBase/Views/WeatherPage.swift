@@ -54,6 +54,7 @@ struct WeatherPage: View {
                 VStack (alignment:.trailing) {
                     
                     Image(systemName: viewModel.iconName)
+                        .frame(height: 150.0)
                         .font(.system(size: 110))
                         .symbolRenderingMode(.multicolor)
                     

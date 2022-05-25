@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BusinessModels
 
 class WeatherDataService : WeatherDataServicing {
     
@@ -14,7 +15,7 @@ class WeatherDataService : WeatherDataServicing {
         let request = WeatherRequest()
         let response = await request.getWeather(city: city)
         
-        let weather: WeatherBusinessModel = WeatherBusinessModel()
+        var weather: WeatherBusinessModel = WeatherBusinessModel()
         
         weather.statusId = response?.weather?.last?.id
         weather.status = response?.weather?.last?.main

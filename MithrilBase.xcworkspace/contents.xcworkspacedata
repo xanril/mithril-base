@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BusinessModels">
+   </FileRef>
+   <FileRef
       location = "group:MithrilBase.xcodeproj">
    </FileRef>
 </Workspace>

@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class WeatherRequest {
+struct WeatherRequest {
     
     func getWeather(city: String) async -> WeatherResponse?  {
         

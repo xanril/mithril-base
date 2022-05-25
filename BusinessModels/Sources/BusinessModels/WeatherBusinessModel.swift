@@ -7,15 +7,15 @@
 
 import Foundation
 
-class WeatherBusinessModel {
+public struct WeatherBusinessModel {
     
-    var status: String?
-    var description: String?
-    var temperature: Double?
-    var location: String?
-    var iconName: String?
+    public var status: String?
+    public var description: String?
+    public var temperature: Double?
+    public var location: String?
+    public var iconName: String?
     
-    var statusId: Int?
+    public var statusId: Int?
     {
         didSet {
             if let safeStatusId = statusId {
@@ -31,6 +31,10 @@ class WeatherBusinessModel {
                 }
             }
         }
+    }
+    
+    public init() {
+        
     }
     
 }
