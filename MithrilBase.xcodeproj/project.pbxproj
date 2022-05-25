@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35028467283B9F9F0088981D /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35028466283B9F9F0088981D /* WeatherController.swift */; };
 		35117772283EE93E00645C5A /* DataServices in Frameworks */ = {isa = PBXBuildFile; productRef = 35117771283EE93E00645C5A /* DataServices */; };
 		35117774283EF2ED00645C5A /* ControllerProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 35117773283EF2ED00645C5A /* ControllerProtocols */; };
+		35117776283EF4F900645C5A /* Controllers in Frameworks */ = {isa = PBXBuildFile; productRef = 35117775283EF4F900645C5A /* Controllers */; };
 		3520FD56283DA21900BF2466 /* MithrilBaseApp+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */; };
 		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
 		3534DD56283B01550045DC34 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD55283B01550045DC34 /* Configurations.swift */; };
@@ -44,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35028466283B9F9F0088981D /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MithrilBaseApp+Injection.swift"; sourceTree = "<group>"; };
 		3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
 		3534DD55283B01550045DC34 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 				35117774283EF2ED00645C5A /* ControllerProtocols in Frameworks */,
 				3579F0B3283E50520006A339 /* BusinessModels in Frameworks */,
 				35117772283EE93E00645C5A /* DataServices in Frameworks */,
+				35117776283EF4F900645C5A /* Controllers in Frameworks */,
 				3579F0C6283E5C820006A339 /* Resolver-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,22 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35028465283B9F8D0088981D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				3520FD57283DA26000BF2466 /* ControllerProtocols */,
-				35028466283B9F9F0088981D /* WeatherController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		3520FD57283DA26000BF2466 /* ControllerProtocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ControllerProtocols;
-			sourceTree = "<group>";
-		};
 		3534DD4E283AF9500045DC34 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +138,6 @@
 		35D9BBAF2839F585001D627F /* MithrilBase */ = {
 			isa = PBXGroup;
 			children = (
-				35028465283B9F8D0088981D /* Controllers */,
 				3534DD4F283AF9BB0045DC34 /* ViewModel */,
 				3534DD4E283AF9500045DC34 /* Views */,
 				35D9BBB02839F585001D627F /* MithrilBaseApp.swift */,
@@ -214,6 +197,7 @@
 				3579F0CC283E5DC10006A339 /* DataServiceProtocols */,
 				35117771283EE93E00645C5A /* DataServices */,
 				35117773283EF2ED00645C5A /* ControllerProtocols */,
+				35117775283EF4F900645C5A /* Controllers */,
 			);
 			productName = MithrilBase;
 			productReference = 35D9BBAD2839F585001D627F /* MithrilBase.app */;
@@ -338,7 +322,6 @@
 				35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */,
 				3534DD56283B01550045DC34 /* Configurations.swift in Sources */,
 				3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */,
-				35028467283B9F9F0088981D /* WeatherController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +672,10 @@
 		35117773283EF2ED00645C5A /* ControllerProtocols */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ControllerProtocols;
+		};
+		35117775283EF4F900645C5A /* Controllers */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Controllers;
 		};
 		3579F0B2283E50520006A339 /* BusinessModels */ = {
 			isa = XCSwiftPackageProductDependency;

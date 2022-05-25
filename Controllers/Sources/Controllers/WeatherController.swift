@@ -9,12 +9,15 @@ import Foundation
 import BusinessModels
 import ControllerProtocols
 import DataServiceProtocols
-import DataServices
 import Resolver
 
-class WeatherController : WeatherControlling {
+public class WeatherController : WeatherControlling {
     
     @Injected private var dataService: WeatherDataServicing
+    
+    public init() {
+        
+    }
     
     public func getWeather(city: String, apiKey: String) async -> WeatherBusinessModel {
         
