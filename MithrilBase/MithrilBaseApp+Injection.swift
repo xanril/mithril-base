@@ -10,14 +10,9 @@ import ControllerProtocols
 import Controllers
 import DataServiceProtocols
 import DataServices
-import Resolver
+import Factory
 
-extension Resolver: ResolverRegistering {
-    
-    public static func registerAllServices() {
-        defaultScope = .graph
-        
-        register { WeatherDataService() as WeatherDataServicing }
-        register { WeatherController() as WeatherControlling }
-    }
+extension Container {
+    static let weatherDataService = Factory<WeatherDataServicing> { WeatherDataService() }
+    static let weatherContoller = Factory<WeatherControlling>{ WeatherController(weatherDataService: Container.weatherDataService.callAsFunction()) }
 }

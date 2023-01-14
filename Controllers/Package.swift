@@ -16,7 +16,6 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.0.0"),
         .package(path: "../BusinessModels"),
         .package(path: "../ControllerProtocols"),
         .package(path: "../DataServiceProtocols")
@@ -26,9 +25,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Controllers",
-            dependencies: ["Resolver", "BusinessModels", "ControllerProtocols", "DataServiceProtocols"]),
+            dependencies: ["BusinessModels", "ControllerProtocols", "DataServiceProtocols"]),
         .testTarget(
             name: "ControllersTests",
-            dependencies: ["Controllers", "Resolver", "BusinessModels", "ControllerProtocols", "DataServiceProtocols"]),
+            dependencies: ["Controllers", "BusinessModels", "ControllerProtocols", "DataServiceProtocols"]),
     ]
 )

@@ -13,8 +13,8 @@
 		3520FD56283DA21900BF2466 /* MithrilBaseApp+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */; };
 		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
 		3534DD56283B01550045DC34 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD55283B01550045DC34 /* Configurations.swift */; };
+		35400E6B2972727E00074780 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 35400E6A2972727E00074780 /* Factory */; };
 		3579F0B3283E50520006A339 /* BusinessModels in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0B2283E50520006A339 /* BusinessModels */; };
-		3579F0C6283E5C820006A339 /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0C5283E5C820006A339 /* Resolver-Static */; };
 		3579F0C9283E5CB30006A339 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0C8283E5CB30006A339 /* Alamofire */; };
 		3579F0CD283E5DC10006A339 /* DataServiceProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0CC283E5DC10006A339 /* DataServiceProtocols */; };
 		35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB02839F585001D627F /* MithrilBaseApp.swift */; };
@@ -70,7 +70,7 @@
 				3579F0B3283E50520006A339 /* BusinessModels in Frameworks */,
 				35117772283EE93E00645C5A /* DataServices in Frameworks */,
 				35117776283EF4F900645C5A /* Controllers in Frameworks */,
-				3579F0C6283E5C820006A339 /* Resolver-Static in Frameworks */,
+				35400E6B2972727E00074780 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +192,12 @@
 			name = MithrilBase;
 			packageProductDependencies = (
 				3579F0B2283E50520006A339 /* BusinessModels */,
-				3579F0C5283E5C820006A339 /* Resolver-Static */,
 				3579F0C8283E5CB30006A339 /* Alamofire */,
 				3579F0CC283E5DC10006A339 /* DataServiceProtocols */,
 				35117771283EE93E00645C5A /* DataServices */,
 				35117773283EF2ED00645C5A /* ControllerProtocols */,
 				35117775283EF4F900645C5A /* Controllers */,
+				35400E6A2972727E00074780 /* Factory */,
 			);
 			productName = MithrilBase;
 			productReference = 35D9BBAD2839F585001D627F /* MithrilBase.app */;
@@ -272,8 +272,8 @@
 			);
 			mainGroup = 35D9BBA42839F585001D627F;
 			packageReferences = (
-				3579F0C4283E5C820006A339 /* XCRemoteSwiftPackageReference "Resolver" */,
 				3579F0C7283E5CB30006A339 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35400E692972727E00074780 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 35D9BBAE2839F585001D627F /* Products */;
 			projectDirPath = "";
@@ -646,9 +646,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3579F0C4283E5C820006A339 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		35400E692972727E00074780 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Resolver";
+			repositoryURL = "https://github.com/hmlongco/Factory";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -677,14 +677,14 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Controllers;
 		};
+		35400E6A2972727E00074780 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35400E692972727E00074780 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
 		3579F0B2283E50520006A339 /* BusinessModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BusinessModels;
-		};
-		3579F0C5283E5C820006A339 /* Resolver-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3579F0C4283E5C820006A339 /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Static";
 		};
 		3579F0C8283E5CB30006A339 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
