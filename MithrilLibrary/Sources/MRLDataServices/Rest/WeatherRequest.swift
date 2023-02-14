@@ -1,0 +1,29 @@
+//
+//  WeatherRequest.swift
+//  MithrilBase
+//
+//  Created by Kristian Mitra on 5/23/22.
+//
+
+import Foundation
+import Alamofire
+
+struct WeatherRequest {
+    
+    func getWeather(city: String, apiKey: String) async throws -> WeatherResponse?  {
+        
+        var responseRecieved: WeatherResponse? = nil
+        
+        let dataTask = AF.request("https://api.openweathermap.org/data/2.5/weather",
+                   method: .get,
+                   parameters: ["q": city,
+                                "appid": apiKey,
+                                "units": "metric"])
+            .validate()
+            .serializingDecodable(WeatherResponse.self)
+        
+        responseRecieved = try await dataTask.value
+        
+        return responseRecieved
+    }
+}

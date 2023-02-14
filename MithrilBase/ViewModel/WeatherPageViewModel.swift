@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import ControllerProtocols
+import MRLControllerProtocols
 import Factory
 
 public class WeatherPageViewModel : ObservableObject{

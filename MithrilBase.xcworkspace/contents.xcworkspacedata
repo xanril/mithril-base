@@ -2,19 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Controllers">
-   </FileRef>
-   <FileRef
-      location = "group:ControllerProtocols">
-   </FileRef>
-   <FileRef
-      location = "group:DataServices">
-   </FileRef>
-   <FileRef
-      location = "group:DataServiceProtocols">
-   </FileRef>
-   <FileRef
-      location = "group:BusinessModels">
+      location = "group:MithrilLibrary">
    </FileRef>
    <FileRef
       location = "group:MithrilBase.xcodeproj">
