@@ -12,8 +12,10 @@ import MithrilCoreDataServices
 
 public class WeatherDataService : WeatherDataServicing {
     
-    public init() {
-        
+    let dataClient: DataClientProtocol
+    
+    public init(dataClient: DataClientProtocol) {
+        self.dataClient = dataClient
     }
     
     public func getWeather(city: String, apiKey: String) async throws  -> WeatherBusinessModel {
@@ -21,7 +23,7 @@ public class WeatherDataService : WeatherDataServicing {
         var weather: WeatherBusinessModel = WeatherBusinessModel()
         
         do {
-            let request = WeatherRequest()
+            let request = WeatherRequest(dataClient: dataClient)
             let response = try await request.getWeather(city: city, apiKey: apiKey)
             
             weather.statusId = response?.weather?.last?.id
