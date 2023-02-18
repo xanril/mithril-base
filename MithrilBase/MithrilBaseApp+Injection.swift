@@ -13,6 +13,15 @@ import MRLDataServiceProtocols
 import Factory
 
 extension Container {
-    static let weatherDataService = Factory<WeatherDataServicing> { WeatherDataService() }
-    static let weatherContoller = Factory<WeatherControlling>{ WeatherController(weatherDataService: Container.weatherDataService.callAsFunction()) }
+    static let dataClient = Factory<DataClientProtocol> {
+        DataClient()
+    }
+    
+    static let weatherDataService = Factory<WeatherDataServicing> {
+        WeatherDataService(dataClient:Container.dataClient.callAsFunction())
+    }
+    
+    static let weatherContoller = Factory<WeatherControlling> {
+        WeatherController(weatherDataService: Container.weatherDataService.callAsFunction())
+    }
 }
