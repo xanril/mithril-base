@@ -9,9 +9,10 @@ import Foundation
 import MRLControllerProtocols
 import Factory
 
-public class WeatherPageViewModel : ObservableObject{
+public class WeatherPageViewModel : ObservableObject {
     
-    @Injected(Container.weatherContoller) private var weatherController:WeatherControlling
+    @Injected(\.weatherContoller)
+    private var weatherController:WeatherControlling
     
     @Published var searchText: String = ""
     @Published var location: String = ""

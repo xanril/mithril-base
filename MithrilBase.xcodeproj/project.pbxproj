@@ -639,7 +639,7 @@
 			repositoryURL = "https://github.com/hmlongco/Factory";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		3579F0C7283E5CB30006A339 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
