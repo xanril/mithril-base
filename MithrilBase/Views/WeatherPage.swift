@@ -70,6 +70,12 @@ struct WeatherPage: View {
                 Spacer()
             }
         }
+        .onAppear() {
+            Task.init {
+                viewModel.searchText = "Manila"
+                await viewModel.getWeather()
+            }
+        }
     }
 }
 
