@@ -11,6 +11,25 @@
 		3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */; };
 		3534DD56283B01550045DC34 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534DD55283B01550045DC34 /* Configurations.swift */; };
 		35400E6B2972727E00074780 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 35400E6A2972727E00074780 /* Factory */; };
+		356F96C72AB58C2100BEE6A0 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96B32AB58C2100BEE6A0 /* Typography.swift */; };
+		356F96C82AB58C2100BEE6A0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356F96B42AB58C2100BEE6A0 /* Colors.xcassets */; };
+		356F96C92AB58C2100BEE6A0 /* ButtonGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96B52AB58C2100BEE6A0 /* ButtonGroups.swift */; };
+		356F96CA2AB58C2100BEE6A0 /* Checkboxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96B62AB58C2100BEE6A0 /* Checkboxes.swift */; };
+		356F96CB2AB58C2100BEE6A0 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96B72AB58C2100BEE6A0 /* TextFields.swift */; };
+		356F96CC2AB58C2100BEE6A0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96B82AB58C2100BEE6A0 /* Buttons.swift */; };
+		356F96CD2AB58C2100BEE6A0 /* BricksAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356F96B92AB58C2100BEE6A0 /* BricksAssets.xcassets */; };
+		356F96CE2AB58C2100BEE6A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 356F96BA2AB58C2100BEE6A0 /* LICENSE */; };
+		356F96CF2AB58C2100BEE6A0 /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96BB2AB58C2100BEE6A0 /* Toggles.swift */; };
+		356F96D02AB58C2100BEE6A0 /* NavigatorsBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96BC2AB58C2100BEE6A0 /* NavigatorsBottom.swift */; };
+		356F96D12AB58C2100BEE6A0 /* ButtonGroupStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96BD2AB58C2100BEE6A0 /* ButtonGroupStyle.swift */; };
+		356F96D22AB58C2100BEE6A0 /* NavigatorsTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96BE2AB58C2100BEE6A0 /* NavigatorsTop.swift */; };
+		356F96D32AB58C2100BEE6A0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96BF2AB58C2100BEE6A0 /* Images.swift */; };
+		356F96D42AB58C2100BEE6A0 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96C02AB58C2100BEE6A0 /* Cards.swift */; };
+		356F96D52AB58C2100BEE6A0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96C12AB58C2100BEE6A0 /* Colors.swift */; };
+		356F96D72AB58C2100BEE6A0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96C42AB58C2100BEE6A0 /* RoundedCorner.swift */; };
+		356F96D82AB58C2100BEE6A0 /* GroupButtonStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96C52AB58C2100BEE6A0 /* GroupButtonStyle+Extensions.swift */; };
+		356F96D92AB58C2100BEE6A0 /* RadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96C62AB58C2100BEE6A0 /* RadioButtons.swift */; };
+		356F96DB2AB58C5800BEE6A0 /* WorkshopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F96DA2AB58C5800BEE6A0 /* WorkshopPage.swift */; };
 		3579F0C9283E5CB30006A339 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3579F0C8283E5CB30006A339 /* Alamofire */; };
 		35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB02839F585001D627F /* MithrilBaseApp.swift */; };
 		35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9BBB22839F585001D627F /* WeatherPage.swift */; };
@@ -43,6 +62,25 @@
 		3520FD55283DA21900BF2466 /* MithrilBaseApp+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MithrilBaseApp+Injection.swift"; sourceTree = "<group>"; };
 		3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPageViewModel.swift; sourceTree = "<group>"; };
 		3534DD55283B01550045DC34 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		356F96B32AB58C2100BEE6A0 /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		356F96B42AB58C2100BEE6A0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		356F96B52AB58C2100BEE6A0 /* ButtonGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGroups.swift; sourceTree = "<group>"; };
+		356F96B62AB58C2100BEE6A0 /* Checkboxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkboxes.swift; sourceTree = "<group>"; };
+		356F96B72AB58C2100BEE6A0 /* TextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		356F96B82AB58C2100BEE6A0 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		356F96B92AB58C2100BEE6A0 /* BricksAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BricksAssets.xcassets; sourceTree = "<group>"; };
+		356F96BA2AB58C2100BEE6A0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		356F96BB2AB58C2100BEE6A0 /* Toggles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
+		356F96BC2AB58C2100BEE6A0 /* NavigatorsBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorsBottom.swift; sourceTree = "<group>"; };
+		356F96BD2AB58C2100BEE6A0 /* ButtonGroupStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGroupStyle.swift; sourceTree = "<group>"; };
+		356F96BE2AB58C2100BEE6A0 /* NavigatorsTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorsTop.swift; sourceTree = "<group>"; };
+		356F96BF2AB58C2100BEE6A0 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		356F96C02AB58C2100BEE6A0 /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		356F96C12AB58C2100BEE6A0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		356F96C42AB58C2100BEE6A0 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		356F96C52AB58C2100BEE6A0 /* GroupButtonStyle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroupButtonStyle+Extensions.swift"; sourceTree = "<group>"; };
+		356F96C62AB58C2100BEE6A0 /* RadioButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtons.swift; sourceTree = "<group>"; };
+		356F96DA2AB58C5800BEE6A0 /* WorkshopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopPage.swift; sourceTree = "<group>"; };
 		35D9BBAD2839F585001D627F /* MithrilBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MithrilBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D9BBB02839F585001D627F /* MithrilBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MithrilBaseApp.swift; sourceTree = "<group>"; };
 		35D9BBB22839F585001D627F /* WeatherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPage.swift; sourceTree = "<group>"; };
@@ -86,7 +124,9 @@
 		3534DD4E283AF9500045DC34 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				356F96B22AB58C2100BEE6A0 /* Controls */,
 				35D9BBB22839F585001D627F /* WeatherPage.swift */,
+				356F96DA2AB58C5800BEE6A0 /* WorkshopPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,6 +137,39 @@
 				3534DD50283AFA840045DC34 /* WeatherPageViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		356F96B22AB58C2100BEE6A0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				356F96BA2AB58C2100BEE6A0 /* LICENSE */,
+				356F96B52AB58C2100BEE6A0 /* ButtonGroups.swift */,
+				356F96BD2AB58C2100BEE6A0 /* ButtonGroupStyle.swift */,
+				356F96B82AB58C2100BEE6A0 /* Buttons.swift */,
+				356F96C02AB58C2100BEE6A0 /* Cards.swift */,
+				356F96B62AB58C2100BEE6A0 /* Checkboxes.swift */,
+				356F96C12AB58C2100BEE6A0 /* Colors.swift */,
+				356F96BF2AB58C2100BEE6A0 /* Images.swift */,
+				356F96BC2AB58C2100BEE6A0 /* NavigatorsBottom.swift */,
+				356F96BE2AB58C2100BEE6A0 /* NavigatorsTop.swift */,
+				356F96C62AB58C2100BEE6A0 /* RadioButtons.swift */,
+				356F96B72AB58C2100BEE6A0 /* TextFields.swift */,
+				356F96BB2AB58C2100BEE6A0 /* Toggles.swift */,
+				356F96B32AB58C2100BEE6A0 /* Typography.swift */,
+				356F96B92AB58C2100BEE6A0 /* BricksAssets.xcassets */,
+				356F96B42AB58C2100BEE6A0 /* Colors.xcassets */,
+				356F96C32AB58C2100BEE6A0 /* Helpers */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		356F96C32AB58C2100BEE6A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				356F96C42AB58C2100BEE6A0 /* RoundedCorner.swift */,
+				356F96C52AB58C2100BEE6A0 /* GroupButtonStyle+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3579F0B1283E50520006A339 /* Frameworks */ = {
@@ -279,8 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356F96C82AB58C2100BEE6A0 /* Colors.xcassets in Resources */,
 				35D9BBB82839F586001D627F /* Preview Assets.xcassets in Resources */,
+				356F96CD2AB58C2100BEE6A0 /* BricksAssets.xcassets in Resources */,
 				35D9BBB52839F586001D627F /* Assets.xcassets in Resources */,
+				356F96CE2AB58C2100BEE6A0 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,11 +381,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356F96D02AB58C2100BEE6A0 /* NavigatorsBottom.swift in Sources */,
+				356F96D92AB58C2100BEE6A0 /* RadioButtons.swift in Sources */,
+				356F96C92AB58C2100BEE6A0 /* ButtonGroups.swift in Sources */,
 				35D9BBB32839F585001D627F /* WeatherPage.swift in Sources */,
+				356F96D52AB58C2100BEE6A0 /* Colors.swift in Sources */,
+				356F96D42AB58C2100BEE6A0 /* Cards.swift in Sources */,
+				356F96CA2AB58C2100BEE6A0 /* Checkboxes.swift in Sources */,
 				3520FD56283DA21900BF2466 /* MithrilBaseApp+Injection.swift in Sources */,
 				35D9BBB12839F585001D627F /* MithrilBaseApp.swift in Sources */,
+				356F96CC2AB58C2100BEE6A0 /* Buttons.swift in Sources */,
+				356F96D32AB58C2100BEE6A0 /* Images.swift in Sources */,
+				356F96D22AB58C2100BEE6A0 /* NavigatorsTop.swift in Sources */,
+				356F96D12AB58C2100BEE6A0 /* ButtonGroupStyle.swift in Sources */,
+				356F96CB2AB58C2100BEE6A0 /* TextFields.swift in Sources */,
+				356F96CF2AB58C2100BEE6A0 /* Toggles.swift in Sources */,
 				3534DD56283B01550045DC34 /* Configurations.swift in Sources */,
+				356F96DB2AB58C5800BEE6A0 /* WorkshopPage.swift in Sources */,
+				356F96C72AB58C2100BEE6A0 /* Typography.swift in Sources */,
+				356F96D72AB58C2100BEE6A0 /* RoundedCorner.swift in Sources */,
 				3534DD51283AFA840045DC34 /* WeatherPageViewModel.swift in Sources */,
+				356F96D82AB58C2100BEE6A0 /* GroupButtonStyle+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

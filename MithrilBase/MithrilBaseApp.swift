@@ -11,7 +11,8 @@ import SwiftUI
 struct MithrilBaseApp: App {
     var body: some Scene {
         WindowGroup {
-            WeatherPage()
+//            WeatherPage()
+            WorkshopPage()
         }
     }
 }
